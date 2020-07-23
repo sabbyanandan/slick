@@ -1,10 +1,11 @@
 package com.example.slick;
 
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import java.util.function.Consumer;
 
 @SpringBootApplication
 public class SlickApplication {
@@ -14,7 +15,17 @@ public class SlickApplication {
 	}
 
 	@Bean
+	public Supplier<String> data() {
+		return () -> "super";
+	}
+
+	@Bean
 	public Consumer<String> print() {
 		return val -> System.out.println(val);
+	}
+
+	@Bean
+	public Consumer<String> up() {
+		return val -> System.out.println(val.toUpperCase());
 	}
 }

@@ -24,10 +24,8 @@ public class SlickApplicationProperties {
 		this.bar = bar;
 	}
 
-	@Override public String toString() {
-		return "SlickApplicationProperties{" +
-				"foo='" + foo + '\'' +
-				", bar='" + bar + '\'' +
-				'}';
+	@Override
+	public String toString() {
+		return "SlickApplicationProperties{" + "foo='" + foo + '\'' + ", bar='" + bar + '\'' + '}';
 	}
 }

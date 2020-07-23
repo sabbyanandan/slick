@@ -22,6 +22,11 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="spring-ext-private-local" />
+      <option name="name" value="Spring EXT Snapshots" />
+      <option name="url" value="https://repo.spring.io/ext-private-local" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="spring-milestones" />
       <option name="name" value="Spring Milestones" />
       <option name="url" value="https://repo.spring.io/libs-milestone-local" />
